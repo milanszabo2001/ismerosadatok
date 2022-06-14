@@ -79,12 +79,15 @@ function torol(obj){
     let newArr=ismerosok.filter(obj=>id != obj.id)
     ismerosok=newArr
     document.getElementById('nevjegyzek').innerHTML=''
+    document.querySelector('.card-title').innerHTML=''
+    document.querySelector('.card-text').innerHTML=''
     render()
 }
 
 function torles(){
     ismerosok=[]
     document.getElementById('nevjegyzek').innerHTML=''
+    document.querySelector('.card').innerHTML=''
     render()
 }
 

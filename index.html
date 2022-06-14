@@ -18,6 +18,12 @@
         input{
             display: flex;
         }
+        span{
+            cursor: pointer;
+        }
+        i{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -31,7 +37,11 @@
         <div class="col-md-6">
             Név:<input type="text" id="nev">
             Születés:<input type="number" id="szuletes">
-            Kapcsolat:<input type="text" id="kapcsolat">
+            Kapcsolat: <br> <select id="kapcsolat">
+                <option value="Család">Család</option>
+                <option value="Barát">Barát</option>
+                <option value="Ismerős">Ismerős</option>
+            </select><br>
             Tel:<input type="tel" pattern="[0-9]{3}-[0-9]{4}" id="tel"><br>
             <input type="button" value="Új névjegy" onclick="add()" class="btn btn-success">
             <input type="button" value="Törlés" onclick="torles()" class="btn btn-danger">
